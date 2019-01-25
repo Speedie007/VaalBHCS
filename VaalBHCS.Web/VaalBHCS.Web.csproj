@@ -16,10 +16,8 @@
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Admin\Views\" />
-    <Folder Include="Areas\BoatLockers\Controllers\" />
     <Folder Include="Areas\BoatLockers\Data\" />
     <Folder Include="Areas\BoatLockers\Models\" />
-    <Folder Include="Areas\BoatLockers\Views\" />
     <Folder Include="Areas\CampSites\Controllers\" />
     <Folder Include="Areas\CampSites\Data\" />
     <Folder Include="Areas\CampSites\Models\" />
