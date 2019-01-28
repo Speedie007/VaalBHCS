@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using VaalBHCS.Models.BoatLockers;
 
 namespace VaalBHCS.Web.Data
 {
@@ -12,5 +13,6 @@ namespace VaalBHCS.Web.Data
             : base(options)
         {
         }
+        public DbSet<VaalBHCS.Models.BoatLockers.BoatLockerModel> BoatLockerModel { get; set; }
     }
 }

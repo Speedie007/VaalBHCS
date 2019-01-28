@@ -4,17 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace VaalBHCS.Web.Areas.BoatLockers.Controllers
+namespace VaalBHCS.Web.Areas.Admin.Controllers
 {
-    [Area("BoatLockers")]
-    public class BoatLockerController : Controller
+    public class BoatLockersController : Controller
     {
-
         public IActionResult Index()
-        {
-            return View();
-        }
-        public IActionResult AddNewBoatlocker()
         {
             return View();
         }
