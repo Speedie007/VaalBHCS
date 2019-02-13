@@ -8,18 +8,19 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using VaalBeachClub.Web.Data.Identity;
 
-namespace VaalBHCSSystem.Areas.Identity.Pages.Account.Manage
+namespace VaalBreachClub.Web.Areas.Identity.Pages.Account.Manage
 {
     public partial class IndexModel : PageModel
     {
-        private readonly UserManager<IdentityUser> _userManager;
-        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly UserManager<BeachClubMember> _userManager;
+        private readonly SignInManager<BeachClubMember> _signInManager;
         private readonly IEmailSender _emailSender;
 
         public IndexModel(
-            UserManager<IdentityUser> userManager,
-            SignInManager<IdentityUser> signInManager,
+            UserManager<BeachClubMember> userManager,
+            SignInManager<BeachClubMember> signInManager,
             IEmailSender emailSender)
         {
             _userManager = userManager;

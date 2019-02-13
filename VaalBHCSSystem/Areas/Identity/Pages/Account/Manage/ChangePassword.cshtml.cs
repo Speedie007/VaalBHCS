@@ -7,17 +7,18 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-namespace VaalBHCSSystem.Areas.Identity.Pages.Account.Manage
+using VaalBeachClub.Web.Data.Identity;
+namespace VaalBreachClub.Web.Areas.Identity.Pages.Account.Manage
 {
     public class ChangePasswordModel : PageModel
     {
-        private readonly UserManager<IdentityUser> _userManager;
-        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly UserManager<BeachClubMember> _userManager;
+        private readonly SignInManager<BeachClubMember> _signInManager;
         private readonly ILogger<ChangePasswordModel> _logger;
 
         public ChangePasswordModel(
-            UserManager<IdentityUser> userManager,
-            SignInManager<IdentityUser> signInManager,
+            UserManager<BeachClubMember> userManager,
+            SignInManager<BeachClubMember> signInManager,
             ILogger<ChangePasswordModel> logger)
         {
             _userManager = userManager;

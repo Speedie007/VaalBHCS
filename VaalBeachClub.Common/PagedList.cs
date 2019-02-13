@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using VaalBeachClub.Common.Interfaces;
 
-namespace VaalBHCSSystem.Core
+namespace VaalBeachClub.Common
 {
     /// <summary>
     /// Paged list

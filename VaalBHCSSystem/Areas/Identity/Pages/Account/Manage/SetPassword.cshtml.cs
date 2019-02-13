@@ -6,17 +6,18 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using VaalBeachClub.Web.Data.Identity;
 
-namespace VaalBHCSSystem.Areas.Identity.Pages.Account.Manage
+namespace VaalBreachClub.Web.Areas.Identity.Pages.Account.Manage
 {
     public class SetPasswordModel : PageModel
     {
-        private readonly UserManager<IdentityUser> _userManager;
-        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly UserManager<BeachClubMember> _userManager;
+        private readonly SignInManager<BeachClubMember> _signInManager;
 
         public SetPasswordModel(
-            UserManager<IdentityUser> userManager,
-            SignInManager<IdentityUser> signInManager)
+            UserManager<BeachClubMember> userManager,
+            SignInManager<BeachClubMember> signInManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;

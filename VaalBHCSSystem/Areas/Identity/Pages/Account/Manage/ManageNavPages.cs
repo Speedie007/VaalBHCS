@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace VaalBHCSSystem.Areas.Identity.Pages.Account.Manage
+namespace VaalBreachClub.Web.Areas.Identity.Pages.Account.Manage
 {
     public static class ManageNavPages
     {
